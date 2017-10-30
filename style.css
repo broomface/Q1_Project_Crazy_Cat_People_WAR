@@ -1,5 +1,5 @@
 *{
-border: solid 2px red;
+border: solid 2px black;
 
   /* grid-area: lside;
     display:grid; */
@@ -22,7 +22,12 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(200px, auto);
+
+/*
+  grid-template-columns: 150px 20px 150px 20px 150px;
+  grid-template-rows: auto 20px auto 20px auto;
+*/
 }
 .one {
   font-family: Palatino;
@@ -31,7 +36,7 @@ body{
 }
 .two {
   grid-column: 2 / 3;
-  grid-row: 2/4;
+  grid-row: 2/5;
 }
 .nested-1 {
   display:grid;
@@ -46,8 +51,16 @@ body{
   margin: 0;
 }
 .lady{
-  max-width: 126px;
-  max-height: 206px;
+  min-width: 134px;
+  min-height: 134px;
+  display:flex;
+  align-self: center;
+}
+
+.cat{
+  min-width: 134px;
+  min-height: 134px;
+    align-self: center;
 }
 
 .nested-2 {
@@ -62,9 +75,87 @@ body{
   padding: 20px;
   margin: 0;
 }
-.five {
+.widget {
   grid-column: 2;
   grid-row: 4;
+  align-self: center;
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #f44336;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.card-image{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.card{
+  align-self: center;
+}
+
+
+.scoreboard{
+  display:grid;
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+}
+
+.cardFace-image1{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+
+}
+
+.card-action1{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+#cardFace1{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  max-width: 100%;
+  height:auto;
+
+}
+
+.cardFace-image2{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.card-action2{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+#cardFace2{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
 }
 
 /*

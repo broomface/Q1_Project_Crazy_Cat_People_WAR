@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -7,32 +8,55 @@
   <link rel="stylesheet" href="style.css">
   <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link type="text/css" rel="stylesheet" href="css/style.css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">  -->
-  <script type="text/js" src="app.js"></script>
+  <!-- <link type="text/css" rel="stylesheet" href="css/style.css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
   <title>Crazy Cat People WAR</title>
 </head>
 <body>
   <div class="main">
     <div class="one"><center><h1>Crazy Cat People War</h1></center></div>
-    <div class="two">Two</div>
+    <div class="two">
       <!-- scoreboard  and card landing goes here -->
-    <div class="nested-1">
-      <img class= "lady" src= "https://tstoaddicts.files.wordpress.com/2014/04/crazy-cat-lady-bunnies.png" alt= "Crazy Cat Lady"></img>
-      <!-- <img class= "left-cards" src= "2"></img> -->
-
+      <div class= "scoreboard">scoreboard</div>
+      <div id="cardFace-image1">
       </div>
-      <!-- Image of cat lady and back of card here -->
-      <div class="nested-2">
-        <p>1</p>
-        <p>2</p>
-        </div>
-    <!-- Image of cat and back of card here -->
-    <div class="five">Five</div>
-    <!-- Flip Button here -->
+      <div id="cardFace-image2">
+      </div>
+      <div class= "widget">
+      <button class="button" id="buttonFlip">...and Flip!</button>
+    </div>
   </div>
 
+    <div class="nested-1">
+      <img class= "lady" src= "https://tstoaddicts.files.wordpress.com/2014/04/crazy-cat-lady-bunnies.png" height= "203px" width= "203px" alt= "Crazy Cat Lady">
+      <!-- <img class= "left-cards" src= "2"></img> -->
+      <div class="card">
+            <div class="card-image">
+             <img src="http://www.ellusionist.com/media/catalog/product/cache/1/small_image/200x200/9df78eab33525d08d6e5fb8d27136e95/b/l/black-tiger-box_red.png" alt="card back">
+            </div>
+            <div class="card-action">
+              <a id="cardFlip"></a>
+            </div>
+      </div>
+    </div>
+      <!-- Image of cat lady and back of card here -->
+      <div class="nested-2">
+        <div class="card">
+              <div class="card-image">
+                <img src="http://www.ellusionist.com/media/catalog/product/cache/1/small_image/200x200/9df78eab33525d08d6e5fb8d27136e95/b/l/black-tiger-box_red.png" alt="card back">
+              </div>
+              <div class="card-action">
+                <a id="cardFlip"></a>
+              </div>
+        </div>
+        <img class= "cat" src= "http://www.photosdaily.com/wp-content/uploads/2012/12/Happy-Cat-130x130.jpg" height= "203px" width= "203px" alt= "Cat"></img>
+        </div>
+    <!-- Image of cat and back of card here -->
+
+</div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
