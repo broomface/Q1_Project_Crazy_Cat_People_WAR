@@ -43,7 +43,7 @@ $.getJSON('https://www.deckofcardsapi.com/api/deck/' + $deckid + '/draw/?count=2
   //var player2Card = data['cards'][1];
   console.log(data["cards"][0], data["cards"][1]);
   console.log(data['image']);
-  $('#cardFace1').attr("src", data['image']);
+  $('#cardFace-image1').attr("src", data['image']);
 
 //  var cF1 = $('#cardFace1');
 //  cF1 = data["cards"][0];
