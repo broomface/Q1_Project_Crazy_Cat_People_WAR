@@ -13,16 +13,18 @@ body{
 /* To think about...*/
 
 body{
-  background-image: url(   http://laurelleaffarm.com/item-photos/vintage-handcrocheted-cotton-lace-cotton-bedspread-or-tablecloth-Laurel-Leaf-Farm-item-no-b52038-2.jpg)
+  background-color: green;
+
+  /*
+  background-image: url(   http://laurelleaffarm.com/item-photos/vintage-handcrocheted-cotton-lace-cotton-bedspread-or-tablecloth-Laurel-Leaf-Farm-item-no-b52038-2.jpg)*/
 
 }
-
 
 .main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(250px, auto);
 
 /*
   grid-template-columns: 150px 20px 150px 20px 150px;
@@ -49,13 +51,15 @@ body{
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   grid-column: 1;
-  grid-row: 3 / 5;
+  grid-row: 2 / 5;
 }
+
 .nested-1 p{
   border: 1px solid purple;
   padding: 20px;
   margin: 0;
 }
+
 .lady{
   min-width: 134px;
   min-height: 134px;
@@ -74,7 +78,8 @@ body{
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   grid-column: 3;
-  grid-row: 3 / 5;
+  grid-row: 2 / 5;
+  
 }
 .nested-2 p{
   border: 1px solid purple;
