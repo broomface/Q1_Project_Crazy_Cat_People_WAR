@@ -1,0 +1,27 @@
+{
+  "name": "Q1_Project_Crazy_Cat_People_WAR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broomface/Q1_Project_Crazy_Cat_People_WAR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/broomface/Q1_Project_Crazy_Cat_People_WAR/issues"
+  },
+  "homepage": "https://github.com/broomface/Q1_Project_Crazy_Cat_People_WAR#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
