@@ -8,15 +8,31 @@ var atWar;
 var remainingCardCount;
 var name;
 
+/*
+pop up...
+Hey "localstorage name", is this you?
+...yes, continue...
+...no, Please enter your name...
+
+*/
 function greet() {
   name = localStorage.getItem("name");
-  if (name == null || name == "null") {
-    localStorage.setItem("name", name);
-  } else {
-  swal("Write something here:", {
-  content: "input",
+  //var nameObj;
+  if (name == null || name == "null" || name === "") {
+  console.log("I am here null")
+    swal("Enter your name: ", {
+      content: "input"
+    })
+    .then((value) => {
+      console.log(value);
+      localStorage.setItem("name", value);
 });
-}
+
+} else {
+    console.log("I am here !null")
+    console.log(name)
+      swal("Welcome Back " + name + "!")
+      }
 }
 greet();
 /*
@@ -98,7 +114,7 @@ function compare(card1num, card2num, remainingCardCount) {
 
 function playAgain() {
   var response = prompt("Asking if they would like to play again...radio button, yes/no button?");
-  if (response.toLowerCase === true || response.toLowerCase === true) {
+  if (response === true || response === true) {
     alert("Well alright, prepare for WAR!");
     console.log("Call a function to start again...?");
     ready();
@@ -163,13 +179,14 @@ $(document).ready(function() {
 
   player1 = {
     name: "",
-    gender: "",
-    points: 0
+    points: 0,
+    task: "",
   };
+
   player2 = {
     name: "",
-    gender: "",
-    points: 0
+    points: 0,
+    task: "",
   };
   atWar = false;
   $("#buttonFlip1").removeAttr("disabled");
